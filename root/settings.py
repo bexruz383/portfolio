@@ -15,7 +15,7 @@ SECRET_KEY = 'django-insecure-md8=ihxw@!mesl*lvfec&=4*2582q#1hj5bqe_*xt+mv_p&0s+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['portfolio-1-tzra.onrender.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['portfoliyo-1.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -107,9 +107,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+
+
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'root/static')]  # `root` ni loyihangiz nomiga moslang
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = 'media/'
