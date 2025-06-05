@@ -14,8 +14,11 @@ SECRET_KEY = 'django-insecure-md8=ihxw@!mesl*lvfec&=4*2582q#1hj5bqe_*xt+mv_p&0s+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-ALLOWED_HOSTS = ['https://portfoliyo-1kjs.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    'portfoliyo-1kjs.onrender.com',
+]
 
 
 # Application definition
