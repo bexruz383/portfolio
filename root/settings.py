@@ -14,11 +14,7 @@ SECRET_KEY = 'django-insecure-md8=ihxw@!mesl*lvfec&=4*2582q#1hj5bqe_*xt+mv_p&0s+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-ALLOWED_HOSTS = [
-    'localhost',
-    '127.0.0.1',
-    'portfoliyo-1kjs.onrender.com',
-]
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -111,13 +107,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / 'staticfiles'  # or an absolute path in your project
-
-# If you have additional static file directories during development
-STATICFILES_DIRS = [
-    BASE_DIR / 'static',  # your local static folder, if you have one
-]
-
+STATICFILES_DIRS = [BASE_DIR / "static"]
+# or an absolute path in your project
 
 
 MEDIA_URL = '/media/'
